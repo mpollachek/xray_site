@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <!-- Required meta tags always come first -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
+
+    <!-- Additional CSS must be placed after Bootstrap CSS -->
+    <!-- build:css css/main.css -->
+    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <!-- endbuild -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Kanit&family=Roboto&display=swap" />
+    <title>Baller X-Rays</title>
+  </head>
+
+  <body>
+  <!--Contact Modal-->
+
+  <div id="contactModal" class="modal fade" role="dialog">
+    <div class="modal-dialog modal-xl" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2 class="modal-title ms-auto">Contact Us!</h2>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="container-fluid">
+            <form>
+              <div class="row form-group">
+                <div class="mb-3 col-sm-4">
+                  <label for="nameInput" class="form-label">Name</label>
+                  <input type="text" class="form-control" required id="nameInput" placeholder="John Smith">
+                </div>
+                <div class="mb-3 col-sm-4">
+                  <label for="emailInput" class="form-label">Another label</label>
+                  <input type="email" class="form-control" id="emailInput" placeholder="johnsmith@XYZ.com">
+                </div>
+                <div class="mb-3 col-sm-4">
+                  <label for="phoneInput" class="form-label">Another label</label>
+                  <input type="tel" class="form-control" id="phoneInput" placeholder="(888) 888-8888">
+                </div>
+              </div>
+              <div class="row form-group">
+                <div class="col-6 col-sm-5 col-md-4 mb-3">
+                  <label class="col-form-label text-nowrap">Contact Preference:</label>
+                </div>
+                <div class="col mb-3">
+                  <div class="form-check form-check-inline mt-2">
+                    <input class="form-check-input" type="radio" name="contactType" id="contactTypeEmail" value="email">
+                    <label class="form-check-label" for="inlineRadio1">Email</label>
+                  </div>
+                  <div class="form-check form-check-inline mt-2">
+                    <input class="form-check-input" type="radio" name="contactType" id="contactTypePhone" value="phone">
+                    <label class="form-check-label" for="inlineRadio2">Phone</label>
+                  </div>
+                </div>
+              </div>
+              <div class="row form-group">
+                <div class="mb-3">
+                  <label for="message" class="form-label">Message</label>
+                  <textarea class="form-control" id="message" rows="10"></textarea>
+                </div>
+              </div>    
+
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+  </div>
+
+
+  <!-- Nav Bar -->
+
+  <nav class="navbar navbar-expand-md navbar-dark sticky-top">
+      <div class="container-fluid px-lg-5">
+        <a class="navbar-brand" href=""><img src="img/wormhole-logo.png" class="me-3" height="50" width="50"/>Baller X-Rays</a>
+
+        <div class="phone ps-md-3 ps-lg-5">
+          <i class="fa fa-phone-square fa-xl">  (888) 888-8888</i>
+        </div>
+
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#xrayNavbar"> <span class="navbar-toggler-icon"></span></button>
+        
+
+        <div class="collapse navbar-collapse fw-bold" id="xrayNavbar">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item active"><a class="nav-link" href="#"><i class="fa fa-home fa-lg"></i> Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="aboutus.html"><i class="fa fa-info fa-lg"></i> About</a></li>
+            <li class="nav-item"><a class="nav-link" href="services.html"><i class="fa fa-list fa-lg"></i> Services</a></li>
+            <li class="nav-item"><a class="nav-link" id="contactLink" href="#contactModal"><i class="fa fa-address-card fa-lg"></i> Contact</a></li>
+          </ul>
+        </div>
+      </div>
+  </nav>
+
+  <!-- Services -->
+  
+<div class="container pt-5">
+  <div class="row row-content bg-dark serviceHeader text-center py-5">
+    <h1>Our Services</h1>
+  </div>
+  <div class="row row-content align-items-center">
+    <div class="col-sm-4 order-sm-last col-md-3">
+      <h2 class="text-sm-right">Service 1</h2>
+    </div>
+    <div class="col">
+      <div class="media">
+        <img class="d-flex mr-3 img-thumbnail" src="img/pexels-tima-miroshnichenko-5452223.jpg" alt="Breadcrumb Trail" />
+        <div class="media-body align-self-center">
+              <h3>Ballin 1</h3>
+              <p class="d-none d-sm-block">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, hic eaque molestiae repellendus expedita nulla, quas, itaque incidunt reiciendis possimus voluptates reprehenderit aliquid deserunt iure?</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+<div class="row row-content align-items-center">
+  <div class="col-sm-4 col-md-3">
+    <h2>Service 2</h2>
+  </div>
+  <div class="col">
+    <div class="media">      
+      <img class="d-flex ml-3 img-thumbnail" src="img/pexels-towfiqu-barbhuiya-8395815.jpg" alt="React Lake" />
+      <div class="media-body align-self-center">
+        <h3>Ballin 2</h3>
+        <p class="d-none d-sm-block">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel nihil omnis quam accusantium esse harum! Sed sint similique rerum corporis.</p>
+  </div>
+    </div>
+  </div>
+</div>
+
+<div class="row row-content align-items-center">
+  <div class="col-sm-4 order-sm-last col-md-3">
+    <h2 class="text-sm-right">Service 3</h2>
+  </div>
+  <div class="col">
+    <div class="media">
+        <img class="d-flex ml-3 img-thumbnail" src="img/pexels-pixabay-356040.jpg" alt="Bootstrap Outfitters" />
+        <div class="media-body align-self-center">
+            <h3>Ballin 3</h3>
+            <p class="d-none d-sm-block">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum quis rerum consequatur, impedit cupiditate vitae eligendi debitis sequi tempore omnis voluptatibus, adipisci inventore vero. Nostrum assumenda a fugiat voluptatem quo!</p>
+        </div>
+    </div>
+  </div>
+</div>    
+</div>
+
+
+
+
+
+
+
+
+
+<footer class="site-footer">
+  <div class="container">
+      <div class="row">             
+          <div class="col-4 col-sm-2 offset-1">
+              <h5>Links</h5>
+              <ul class="list-unstyled">
+                  <li><a href="#">Home</a></li>
+                  <li><a href="aboutus.html">About</a></li>
+                  <li><a href="#">Services</a></li>
+                  <li><a href="#">Contact</a></li>
+              </ul>
+          </div>
+          <div class="col-6 col-sm-5 text-center">
+            <h5>Social</h5>
+            <a href="http://instagram.com/"><i class="fa fa-instagram"></i></a>
+            <a href="http://facebook.com/"><i class="fa fa-facebook"></i></a>
+            <a href="http://twitter.com/"><i class="fa fa-twitter"></i></a>
+            <a href="http://youtube.com/"><i class="fa fa-youtube"></i></a>
+          </div>
+          <div class="col-sm-4 text-center">
+            <i class="fa fa-phone fa-lg text-primary"></i> (888) 888-888<br />
+            <i class="fa fa-envelope fa-lg text-primary"></i> Xray@BallerXRays.com
+          </div>                
+     </div>
+</div>
+</footer>
+<!-- build:js js/main.js -->
+<script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+<script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+<script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="js/scripts.js"></script>
+<!-- endbuild -->
+</body>
+
+</html>

@@ -1,0 +1,122 @@
+.navbar {
+  background-color: #0759dc;
+  background-image: linear-gradient(to top left, #19c2c2, #0759dc);
+  white-space: nowrap; }
+
+.fa {
+  color: #511557; }
+
+.fa-phone-square {
+  color: white;
+  font-size: 20px; }
+  @media (min-width: 768px) {
+    .fa-phone-square {
+      font-size: 30px; } }
+
+.carousel-caption p {
+  font-size: 22px; }
+
+/* about us */
+.containerAbout {
+  width: 100%;
+  height: 100%;
+  font-family: "Roboto", sans-serif; }
+  .containerAbout h1 {
+    color: #333;
+    text-align: center;
+    margin: 100px auto 50px;
+    font-family: "Roboto", sans-serif; }
+
+.rowAbout {
+  width: 85;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between; }
+
+.colAbout {
+  flex-basis: 30%;
+  overflow: hidden; }
+
+.card {
+  width: 350px;
+  height: 350px;
+  perspective: 1000px;
+  cursor: pointer; }
+
+.inner-box {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  border-radius: 10px;
+  transition: transform 1.5s;
+  transform-style: preserve-3d; }
+
+.card-front,
+.card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 10px; }
+
+.card-front {
+  background-position: center;
+  background-size: cover; }
+
+.front-1 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url(../img/pexels-antoni-shkraba-5215024.jpg); }
+
+.front-2 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url(../img/pexels-tima-miroshnichenko-5452256.jpg); }
+
+.front-3 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url(../img/pexels-thirdman-5327656.jpg); }
+
+.card span {
+  display: inline-block;
+  width: 100px;
+  padding: 14px 0;
+  margin-top: 290px;
+  border-radius: 4px;
+  background: rgba(238, 209, 175, 0.6);
+  color: black;
+  transition: transform 1.5s;
+  font-weight: bold; }
+
+.card-back {
+  background: #1c1f54;
+  transform: rotateX(180deg);
+  color: #fff; }
+  .card-back h3 {
+    margin-top: 60px; }
+  .card-back p {
+    display: inline-block;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #fff;
+    margin-top: 10px; }
+
+.card:hover .inner-box {
+  transform: rotateX(-180deg); }
+
+card:hover span {
+  transform: translateY(140px); }
+
+.social-media img {
+  width: 30px;
+  margin: 10px 5px; }
+
+.site-footer {
+  background-image: linear-gradient(#737171, white);
+  padding: 40px 0;
+  bottom: 0; }
+
+/* Services */
+.row-content {
+  border-bottom: 1px ridge; }
+  .row-content img {
+    width: 50vw; }
+
+.serviceHeader {
+  color: white; }
